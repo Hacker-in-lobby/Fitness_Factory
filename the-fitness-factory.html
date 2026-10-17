@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Fitness Factory | Gym in Choudagra, Fatehpur</title>
+<meta name="description" content="The Fitness Factory is a gym on GT Road in Choudagra, Fatehpur. Weight training, personal training, nutritional training, cycling and treadmills. Open six days a week.">
+<meta name="theme-color" content="#1d1f21">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Big+Shoulders+Stencil+Display:wght@800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "The Fitness Factory",
+  "telephone": "+916393259664",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "GT Rd, beside Pooja Sweet House, Choudagra",
+    "addressLocality": "Fatehpur",
+    "addressRegion": "Uttar Pradesh",
+    "postalCode": "212665",
+    "addressCountry": "IN"
+  }
+}
+</script>
+
+<style>
+:root{
+  --iron:#1d1f21;
+  --iron-2:#272a2d;
+  --concrete:#dfe0dd;
+  --chalk:#f3f4f2;
+  --safety:#ffc400;
+  --ink:#16181a;
+  --steel:#62676a;
+  --display:'Big Shoulders Display','Oswald','Arial Narrow',Impact,sans-serif;
+  --stencil:'Big Shoulders Stencil Display','Big Shoulders Display','Oswald',Impact,sans-serif;
+  --body:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --gutter:clamp(1.1rem,4vw,3rem);
+  --max:1240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--body);font-size:1.05rem;line-height:1.6;color:var(--ink);background:var(--chalk);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+ul,ol{list-style:none}
+:focus-visible{outline:3px solid var(--safety);outline-offset:3px}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+
+/* Placeholder surface shown behind every photo, so a missing image still looks intentional */
+.ph{position:relative;overflow:hidden;background:
+  repeating-linear-gradient(-45deg,rgba(255,255,255,.035) 0 14px,transparent 14px 28px),var(--iron-2)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.45rem;font:700 1rem/1 var(--body);text-decoration:none;border-radius:4px;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease,color .15s ease}
+.btn svg{width:1.15rem;height:1.15rem;flex:none}
+.btn:active{transform:translateY(1px)}
+.btn-safety{background:var(--safety);color:#111}
+.btn-safety:hover{background:#fff}
+.btn-line{border-color:#fff;color:#fff}
+.btn-line:hover{background:#fff;color:#111}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#000}
+.btn-dark-line{border-color:var(--ink);color:var(--ink)}
+.btn-dark-line:hover{background:var(--ink);color:#fff}
+.ico{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(29,31,33,.94);backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}
+.nav-in{display:flex;align-items:center;gap:1.5rem;height:68px}
+.logo{display:flex;align-items:center;gap:.7rem;text-decoration:none;font:800 1.55rem/1 var(--stencil);letter-spacing:.04em;text-transform:uppercase}
+.logo i{width:26px;height:26px;background:var(--safety);display:block;clip-path:polygon(0 0,100% 0,100% 70%,70% 100%,0 100%)}
+.nav-links{display:flex;gap:1.9rem;margin-left:auto;font-weight:500;font-size:.98rem}
+.nav-links a{text-decoration:none;color:rgba(255,255,255,.82);padding:.3rem 0;border-bottom:2px solid transparent}
+.nav-links a:hover{color:#fff;border-color:var(--safety)}
+.nav .btn{padding:.7rem 1.1rem;font-size:.95rem}
+.burger{display:none;margin-left:auto;background:none;border:0;color:#fff;width:44px;height:44px;cursor:pointer}
+.burger svg{width:26px;height:26px}
+
+/* Hero */
+.hero{position:relative;min-height:max(640px,100svh);display:flex;flex-direction:column;color:#fff;overflow:hidden;isolation:isolate}
+.hero-media{position:absolute;inset:0;z-index:-2}
+.hero-shade{position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(90deg,rgba(18,19,20,.92) 0%,rgba(18,19,20,.72) 45%,rgba(18,19,20,.3) 100%),
+  linear-gradient(0deg,rgba(18,19,20,.85) 0%,transparent 40%)}
+.hero-in{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:1.5rem;padding-block:4rem 8rem}
+.status{display:inline-flex;align-items:center;gap:.65rem;padding:.5rem .95rem;border:1px solid rgba(255,255,255,.35);border-radius:999px;font-size:.92rem;font-weight:500;background:rgba(18,19,20,.55)}
+.status i{width:.6rem;height:.6rem;border-radius:50%;background:#8a8f92}
+.status.open i{background:#3ddc84;box-shadow:0 0 0 4px rgba(61,220,132,.25)}
+.status.closed i{background:#ff7a66}
+h1{font:800 clamp(3.4rem,12.5vw,9.5rem)/.88 var(--stencil);text-transform:uppercase;letter-spacing:.01em;max-width:11ch}
+.hero p.lead{max-width:34rem;font-size:clamp(1.05rem,2.2vw,1.25rem);color:rgba(255,255,255,.86)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem}
+.hero-in>*{animation:rise .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0)*90ms + 150ms)}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* Hazard tape with the services running through it */
+.tape{position:absolute;left:-3%;right:-3%;bottom:2.2rem;transform:rotate(-1.6deg);background:var(--safety);color:#111;overflow:hidden}
+.tape::before,.tape::after{content:"";display:block;height:10px;background:repeating-linear-gradient(-45deg,#111 0 14px,var(--safety) 14px 28px)}
+.tape-track{display:flex;width:max-content;animation:run 36s linear infinite}
+.tape span{font:800 1.55rem/1 var(--display);text-transform:uppercase;letter-spacing:.06em;padding:.8rem 1.6rem;white-space:nowrap}
+.tape span::after{content:"";display:inline-block;width:.55rem;height:.55rem;background:#111;margin-left:3.2rem;transform:rotate(45deg)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* Sections */
+section{padding-block:clamp(4rem,9vw,7.5rem)}
+h2{font:800 clamp(2.4rem,6vw,4.4rem)/.95 var(--display);text-transform:uppercase;letter-spacing:.01em}
+.sec-head{display:flex;flex-wrap:wrap;gap:1rem 3rem;justify-content:space-between;align-items:flex-end;margin-bottom:clamp(2rem,5vw,3.5rem)}
+.sec-head p{max-width:27rem;color:var(--steel)}
+
+/* Services as floor-sign rows */
+#services{background:var(--chalk)}
+.svc{border-top:2px solid var(--ink)}
+.svc li{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) auto;align-items:center;gap:1.5rem;padding:1.5rem clamp(.5rem,2vw,1.4rem);border-bottom:2px solid var(--ink);transition:background .2s ease}
+.svc li:hover{background:var(--safety)}
+.svc h3{font:800 clamp(2.1rem,5.2vw,3.9rem)/.95 var(--display);text-transform:uppercase;display:flex;align-items:center;gap:1rem}
+.svc h3 svg{width:clamp(1.8rem,3.2vw,2.6rem);height:clamp(1.8rem,3.2vw,2.6rem);flex:none}
+.svc p{color:#34383b;max-width:30rem}
+.svc .thumb{width:0;height:96px;opacity:0;transition:width .35s ease,opacity .25s ease}
+.svc li:hover .thumb{width:230px;opacity:1}
+@media (hover:none){.svc .thumb{width:110px;opacity:1}}
+
+/* About */
+#about{background:var(--iron);color:#fff}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.frame{position:relative;aspect-ratio:4/5;margin:0 14px 14px 0}
+.frame::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:3px solid var(--safety);z-index:-1}
+.frame .ph{height:100%}
+.facts{margin-top:2rem;border-top:1px solid rgba(255,255,255,.2)}
+.facts li{padding:1.1rem 0;border-bottom:1px solid rgba(255,255,255,.2);display:grid;grid-template-columns:11rem 1fr;gap:1rem}
+.facts b{font:800 1.5rem/1.1 var(--display);text-transform:uppercase;color:var(--safety);letter-spacing:.02em}
+.facts span{color:rgba(255,255,255,.82)}
+
+/* Steps, a real sequence */
+#start{background:var(--concrete)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;counter-reset:s}
+.steps li{counter-increment:s;border-top:6px solid var(--ink);padding-top:1.1rem}
+.steps li::before{content:counter(s);display:block;font:800 4.5rem/1 var(--stencil);color:var(--ink)}
+.steps h3{font:800 1.7rem/1.05 var(--display);text-transform:uppercase;margin:.4rem 0 .5rem}
+.steps p{color:#3b4043;font-size:1rem}
+
+/* Gallery */
+#gallery{background:var(--iron);color:#fff;padding-bottom:0}
+.mosaic{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(150px,22vw,300px);gap:6px;margin-top:2.5rem}
+.mosaic .ph:nth-child(1){grid-column:span 7;grid-row:span 2}
+.mosaic .ph:nth-child(2){grid-column:span 5}
+.mosaic .ph:nth-child(3){grid-column:span 5}
+.mosaic .ph:nth-child(4){grid-column:span 4}
+.mosaic .ph:nth-child(5){grid-column:span 8}
+#gallery .mosaic{margin-bottom:0}
+
+/* Membership band */
+#plans{background:var(--safety);color:#111}
+.plans-in{display:grid;grid-template-columns:1.3fr 1fr;gap:2rem 4rem;align-items:end}
+.plans-in p{font-size:1.15rem;max-width:30rem;margin-top:1.2rem}
+.plans-cta{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:flex-end}
+
+/* Visit */
+#visit{background:var(--chalk)}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem)}
+.hours{width:100%;border-collapse:collapse;border-top:2px solid var(--ink)}
+.hours th,.hours td{text-align:left;padding:.95rem .6rem;border-bottom:1px solid var(--line,rgba(22,24,26,.2));vertical-align:top;font-weight:500}
+.hours th{font:800 1.35rem/1.2 var(--display);text-transform:uppercase;letter-spacing:.03em;width:9.5rem}
+.hours tr.today{background:var(--safety)}
+.hours tr.today th::after{content:"today";font:700 .72rem/1 var(--body);text-transform:none;letter-spacing:.02em;margin-left:.5rem;padding:.2rem .45rem;background:var(--ink);color:#fff;border-radius:3px;vertical-align:middle}
+.hours .off{color:var(--steel)}
+.hours-note{margin-top:1rem;color:var(--steel);font-size:.95rem}
+.contact li{display:flex;gap:1rem;padding:1.05rem 0;border-bottom:1px solid rgba(22,24,26,.2)}
+.contact li:first-child{border-top:2px solid var(--ink)}
+.contact svg{width:1.5rem;height:1.5rem;flex:none;margin-top:.15rem}
+.contact b{display:block;font:800 1.35rem/1.2 var(--display);text-transform:uppercase;letter-spacing:.03em}
+.contact a{text-decoration:none;font-weight:700;border-bottom:2px solid var(--safety)}
+.contact a:hover{background:var(--safety)}
+.contact-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.map{margin-top:clamp(2rem,5vw,3.5rem);height:clamp(300px,44vw,440px);border:2px solid var(--ink)}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(.85) contrast(1.05)}
+
+/* Footer */
+footer{background:var(--iron);color:rgba(255,255,255,.78);padding-block:2.5rem;font-size:.95rem}
+.foot{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center}
+.foot .logo{color:#fff;font-size:1.3rem}
+
+/* Mobile action bar */
+.dock{display:none}
+
+@media (max-width:900px){
+  .nav-links{display:none;position:absolute;left:0;right:0;top:68px;flex-direction:column;gap:0;margin:0;background:var(--iron);border-bottom:1px solid rgba(255,255,255,.12);padding:.5rem var(--gutter) 1rem}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:.9rem 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:1.05rem}
+  .nav .btn{display:none}
+  .burger{display:block}
+  .split,.visit-grid,.plans-in{grid-template-columns:1fr}
+  .plans-cta{justify-content:flex-start}
+  .steps{grid-template-columns:1fr 1fr}
+  .svc li{grid-template-columns:1fr auto;gap:.6rem 1rem}
+  .svc p{grid-column:1/-1;grid-row:2}
+  .svc .thumb{grid-row:1;grid-column:2}
+  .frame{max-width:420px}
+}
+@media (max-width:640px){
+  body{padding-bottom:64px}
+  .steps{grid-template-columns:1fr}
+  .facts li{grid-template-columns:1fr;gap:.2rem}
+  .hours th{width:7.5rem;font-size:1.15rem}
+  .hero-in{padding-block:3rem 9rem}
+  .mosaic .ph:nth-child(n){grid-column:span 12;grid-row:span 1}
+  .mosaic .ph:nth-child(1){grid-row:span 2}
+  .dock{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60}
+  .dock a{display:flex;align-items:center;justify-content:center;gap:.5rem;padding:1rem;font-weight:700;text-decoration:none}
+  .dock a:first-child{background:var(--safety);color:#111}
+  .dock a:last-child{background:var(--ink);color:#fff}
+  .dock svg{width:1.15rem;height:1.15rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero-in>*{animation:none}
+  .tape-track{animation:none}
+  .svc .thumb{transition:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#top" aria-label="The Fitness Factory, home"><i></i>Fitness Factory</a>
+    <nav class="nav-links" id="menu" aria-label="Main">
+      <a href="#services">Training</a>
+      <a href="#about">About</a>
+      <a href="#start">Get started</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Hours and location</a>
+    </nav>
+    <a class="btn btn-safety" href="tel:+916393259664">
+      <svg class="ico" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
+      Call now
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <svg class="ico" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" style="padding:0">
+  <div class="hero-media ph">
+    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1800&q=75" alt="" onerror="this.remove()">
+  </div>
+  <div class="hero-shade"></div>
+
+  <div class="wrap hero-in">
+    <span class="status" id="status" style="--i:0"><i></i><span id="statusText">Checking hours</span></span>
+    <h1 style="--i:1">Strength is built here.</h1>
+    <p class="lead" style="--i:2">Weight training, personal coaching, nutrition guidance, cycling and treadmills. On GT Road in Choudagra, beside Pooja Sweet House.</p>
+    <div class="hero-cta" style="--i:3">
+      <a class="btn btn-safety" href="tel:+916393259664">
+        <svg class="ico" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
+        Call 063932 59664
+      </a>
+      <a class="btn btn-line" href="https://wa.me/916393259664?text=Hi%2C%20I%27d%20like%20to%20know%20about%20membership%20at%20The%20Fitness%20Factory." target="_blank" rel="noopener">
+        <svg class="ico" viewBox="0 0 24 24"><path d="M21 12a9 9 0 01-13.4 7.8L3 21l1.3-4.4A9 9 0 1121 12z"/></svg>
+        Message on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <div class="tape" aria-hidden="true">
+    <div class="tape-track" id="tapeTrack">
+      <span>Weight training</span><span>Personal training</span><span>Nutritional training</span><span>Cycling</span><span>Treadmill</span>
+      <span>Weight training</span><span>Personal training</span><span>Nutritional training</span><span>Cycling</span><span>Treadmill</span>
+      <span>Weight training</span><span>Personal training</span><span>Nutritional training</span><span>Cycling</span><span>Treadmill</span>
+      <span>Weight training</span><span>Personal training</span><span>Nutritional training</span><span>Cycling</span><span>Treadmill</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Five ways<br>to train</h2>
+      <p>Pick one or mix them. Every session can be shaped around your goal, whether that is strength, fat loss or just getting started.</p>
+    </div>
+
+    <ul class="svc">
+      <li>
+        <h3>
+          <svg class="ico" viewBox="0 0 24 24"><path d="M6.5 6.5v11M17.5 6.5v11M3 9v6M21 9v6M6.5 12h11"/></svg>
+          Weight training
+        </h3>
+        <p>Weights and equipment to build strength and muscle, at a level that suits you.</p>
+        <div class="thumb ph"><img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=500&q=70" alt="Barbell and weight plates" loading="lazy" onerror="this.remove()"></div>
+      </li>
+      <li>
+        <h3>
+          <svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+          Personal training
+        </h3>
+        <p>One-on-one coaching built around your goal, your schedule and where you are starting from.</p>
+        <div class="thumb ph"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=500&q=70" alt="Trainer coaching in a gym" loading="lazy" onerror="this.remove()"></div>
+      </li>
+      <li>
+        <h3>
+          <svg class="ico" viewBox="0 0 24 24"><path d="M5 19c0-8 6-14 15-14 0 9-6 15-14 15M5 19c3-5 6-8 10-10"/></svg>
+          Nutritional training
+        </h3>
+        <p>Practical eating guidance that goes with your training, for fat loss or for building muscle.</p>
+        <div class="thumb ph"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=500&q=70" alt="Healthy meal" loading="lazy" onerror="this.remove()"></div>
+      </li>
+      <li>
+        <h3>
+          <svg class="ico" viewBox="0 0 24 24"><circle cx="6" cy="16" r="3.5"/><circle cx="18" cy="16" r="3.5"/><path d="M6 16l4-8h5l3 8M10 8H8M13 13l-3-5"/></svg>
+          Cycling
+        </h3>
+        <p>Low-impact cardio for stamina and fat loss that is easy on the joints.</p>
+        <div class="thumb ph"><img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=500&q=70" alt="Exercise bikes" loading="lazy" onerror="this.remove()"></div>
+      </li>
+      <li>
+        <h3>
+          <svg class="ico" viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+          Treadmill
+        </h3>
+        <p>Walk, jog or run. Warm up, build endurance or burn calories, whatever the weather outside.</p>
+        <div class="thumb ph"><img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=500&q=70" alt="Treadmills in a gym" loading="lazy" onerror="this.remove()"></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap split">
+    <div class="frame">
+      <div class="ph">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=75" alt="Person training with weights" loading="lazy" onerror="this.remove()">
+      </div>
+    </div>
+    <div>
+      <h2>A gym that is easy to find and easy to start</h2>
+      <ul class="facts">
+        <li><b>Easy to find</b><span>On GT Road, right beside Pooja Sweet House in Choudagra.</span></li>
+        <li><b>Early and late</b><span>Doors open at 5:30 AM for the morning crowd, with evening sessions running until 10 PM.</span></li>
+        <li><b>Every level</b><span>Coaching for first-timers and regulars alike. Nobody gets left to figure it out alone.</span></li>
+        <li><b>All in one place</b><span>Strength, cardio and nutrition guidance under one roof.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW TO START ============ -->
+<section id="start">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Start in<br>four steps</h2>
+      <p>No long forms. Walk in or send a message, and we take it from there.</p>
+    </div>
+    <ol class="steps">
+      <li><h3>Visit or message</h3><p>Drop by the gym, call, or send a WhatsApp message.</p></li>
+      <li><h3>Tell us your goal</h3><p>Fat loss, muscle, stamina or general fitness. Say what you want.</p></li>
+      <li><h3>Get a plan</h3><p>A routine that fits your week and your starting level.</p></li>
+      <li><h3>Show up and train</h3><p>Come in at 5:30 AM or after work. We are here both times.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:0">
+      <h2>Inside the<br>factory</h2>
+      <p>Replace these with photos from the gym floor.</p>
+    </div>
+  </div>
+  <div class="mosaic">
+    <div class="ph"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=70" alt="Dumbbell rack" loading="lazy" onerror="this.remove()"></div>
+    <div class="ph"><img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=900&q=70" alt="Weights on the gym floor" loading="lazy" onerror="this.remove()"></div>
+    <div class="ph"><img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=900&q=70" alt="Workout in progress" loading="lazy" onerror="this.remove()"></div>
+    <div class="ph"><img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=800&q=70" alt="Training session" loading="lazy" onerror="this.remove()"></div>
+    <div class="ph"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1400&q=70" alt="Lifting in the gym" loading="lazy" onerror="this.remove()"></div>
+  </div>
+</section>
+
+<!-- ============ MEMBERSHIP ============ -->
+<section id="plans">
+  <div class="wrap plans-in">
+    <div>
+      <h2>Ask about<br>membership</h2>
+      <p>Plans and current offers can change. Message us on WhatsApp or stop by the front desk and we will find the right fit for you.</p>
+    </div>
+    <div class="plans-cta">
+      <a class="btn btn-dark" href="https://wa.me/916393259664?text=Hi%2C%20I%27d%20like%20to%20know%20about%20membership%20at%20The%20Fitness%20Factory." target="_blank" rel="noopener">
+        <svg class="ico" viewBox="0 0 24 24"><path d="M21 12a9 9 0 01-13.4 7.8L3 21l1.3-4.4A9 9 0 1121 12z"/></svg>
+        Ask on WhatsApp
+      </a>
+      <a class="btn btn-dark-line" href="tel:+916393259664">
+        <svg class="ico" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
+        Call 063932 59664
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOURS + LOCATION ============ -->
+<section id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Hours and<br>location</h2>
+      <p>Two sessions a day, six days a week. Closed on Sundays.</p>
+    </div>
+
+    <div class="visit-grid">
+      <div>
+        <table class="hours" aria-label="Opening hours">
+          <tbody id="hoursBody"></tbody>
+        </table>
+        <p class="hours-note">Timings can change on holidays. Call to confirm.</p>
+      </div>
+
+      <div>
+        <ul class="contact">
+          <li>
+            <svg class="ico" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div><b>Address</b>GT Rd, beside Pooja Sweet House,<br>Choudagra, Fatehpur,<br>Uttar Pradesh 212665</div>
+          </li>
+          <li>
+            <svg class="ico" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
+            <div><b>Phone</b><a href="tel:+916393259664">063932 59664</a></div>
+          </li>
+          <li>
+            <svg class="ico" viewBox="0 0 24 24"><path d="M21 12a9 9 0 01-13.4 7.8L3 21l1.3-4.4A9 9 0 1121 12z"/></svg>
+            <div><b>WhatsApp</b><a href="https://wa.me/916393259664" target="_blank" rel="noopener">Send a message</a></div>
+          </li>
+        </ul>
+        <div class="contact-cta">
+          <a class="btn btn-dark" href="https://maps.app.goo.gl/YVTWuGLGWWXWNEEZA" target="_blank" rel="noopener">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>
+            Get directions
+          </a>
+          <a class="btn btn-dark-line" href="https://maps.app.goo.gl/YVTWuGLGWWXWNEEZA" target="_blank" rel="noopener">See reviews on Google Maps</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="map">
+      <iframe title="Map showing The Fitness Factory in Choudagra, Fatehpur" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=The+Fitness+Factory,+GT+Rd,+beside+Pooja+Sweet+House,+Choudagra,+Fatehpur,+Uttar+Pradesh+212665&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="logo" href="#top"><i></i>Fitness Factory</a>
+    <span>GT Rd, beside Pooja Sweet House, Choudagra, Fatehpur, Uttar Pradesh 212665</span>
+    <span>&copy; <span id="year">2026</span> The Fitness Factory</span>
+  </div>
+</footer>
+
+<!-- Mobile action bar -->
+<div class="dock">
+  <a href="tel:+916393259664"><svg class="ico" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>Call</a>
+  <a href="https://wa.me/916393259664?text=Hi%2C%20I%27d%20like%20to%20know%20about%20membership%20at%20The%20Fitness%20Factory." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24"><path d="M21 12a9 9 0 01-13.4 7.8L3 21l1.3-4.4A9 9 0 1121 12z"/></svg>WhatsApp</a>
+</div>
+
+<script>
+/* ---------- Opening hours (minutes from midnight) ----------
+   Taken from the Google Maps listing: Sat, Mon, Tue, Wed and Thu mornings.
+   TODO: confirm Thursday evening and Friday with the owner. They are set to match Tuesday for now. */
+const MORNING = [330, 600];            // 5:30 AM to 10:00 AM
+const SCHEDULE = {
+  1: { name: 'Monday',    slots: [MORNING, [960, 1320]] },   // 4:00 PM to 10:00 PM
+  2: { name: 'Tuesday',   slots: [MORNING, [990, 1320]] },   // 4:30 PM to 10:00 PM
+  3: { name: 'Wednesday', slots: [MORNING, [990, 1320]] },
+  4: { name: 'Thursday',  slots: [MORNING, [990, 1320]] },   // TODO confirm evening
+  5: { name: 'Friday',    slots: [MORNING, [990, 1320]] },   // TODO confirm
+  6: { name: 'Saturday',  slots: [MORNING, [960, 1320]] },
+  0: { name: 'Sunday',    slots: [] }
+};
+const ORDER = [1, 2, 3, 4, 5, 6, 0];
+
+const pad = n => String(n).padStart(2, '0');
+function fmt(min) {
+  const h = Math.floor(min / 60), m = min % 60;
+  return (h % 12 || 12) + ':' + pad(m) + ' ' + (h >= 12 ? 'PM' : 'AM');
+}
+
+/* Hours table */
+const today = new Date().getDay();
+document.getElementById('hoursBody').innerHTML = ORDER.map(d => {
+  const s = SCHEDULE[d];
+  const times = s.slots.length
+    ? s.slots.map(([a, b]) => fmt(a) + ' to ' + fmt(b)).join('<br>')
+    : '<span class="off">Closed</span>';
+  return '<tr' + (d === today ? ' class="today"' : '') + '><th scope="row">' + s.name + '</th><td>' + times + '</td></tr>';
+}).join('');
+
+/* Live open / closed pill */
+function getStatus(now) {
+  const d = now.getDay(), mins = now.getHours() * 60 + now.getMinutes();
+  for (const [a, b] of SCHEDULE[d].slots) {
+    if (mins >= a && mins < b) return { open: true, text: 'Open now, until ' + fmt(b) };
+  }
+  for (let i = 0; i < 8; i++) {
+    const day = (d + i) % 7;
+    for (const [a] of SCHEDULE[day].slots) {
+      if (i > 0 || a > mins) {
+        const when = i === 0 ? 'today' : i === 1 ? 'tomorrow' : SCHEDULE[day].name;
+        return { open: false, text: 'Closed now, opens ' + when + ' at ' + fmt(a) };
+      }
+    }
+  }
+  return { open: false, text: 'Closed now' };
+}
+function paintStatus() {
+  const s = getStatus(new Date());
+  const el = document.getElementById('status');
+  el.classList.toggle('open', s.open);
+  el.classList.toggle('closed', !s.open);
+  document.getElementById('statusText').textContent = s.text;
+}
+paintStatus();
+setInterval(paintStatus, 60000);
+
+/* Mobile menu */
+const burger = document.getElementById('burger'), menu = document.getElementById('menu');
+burger.addEventListener('click', () => {
+  const open = menu.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open);
+  burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+});
+menu.addEventListener('click', e => {
+  if (e.target.tagName === 'A') { menu.classList.remove('open'); burger.setAttribute('aria-expanded', false); }
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
